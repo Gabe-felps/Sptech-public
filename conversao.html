@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="in_asw">
+    <div id="div_result"></div>
+</body>
+</html>
+
+<script>
+
+    let hex_bin = ["A" = 10, "B" = 11, "C" = 12, "D" = 13, "E" = 14, "F" = 15]
+
+    function ToBinary(in_num, convertion) {
+
+        let resp = ""
+
+        switch (convertion){
+            case ("8"):
+                for (let count = 0; count < in_num.length; count++){
+                    algAtual = in_num[count]
+                    for (let i = 0; i < 3; i++){
+                        resp += algAtual % 2**(3-i)
+                    }
+                }
+            break
+        }
+        
+
+    }
+
+    for (let i = 0; i < in_num.length; i++){
+        resp = Number(in_num[in_num.length-i]) ** i
+    }
+
+    for (let i = 0; i < in_num.length; i++){
+        for (let i = 0; i < 3; i++){
+            resp = Number(in_num[in_num.length-i]) ** i
+        }
+    }
+
+</script>
